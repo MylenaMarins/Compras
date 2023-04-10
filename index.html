@@ -29,39 +29,40 @@
     <section>
         <br><br>
         <form class="formBox">
-            <p style="text-align: center;">Compras</p>
+            <p style="text-align: center;"><h1>Compras</h1></p>
             <fieldset>
                 <fieldset>
-                    <legend>identifica&ccedil;o</legend>
+                    <legend><b>identifica&ccedil;&atilde;o</b></legend>
                     <label name="email" value="email"> E-mail: </label>
-                    <input type="email">
-                    <label name="senha" value="senha"> Senha: </label>
+                    <input type="email" size="50">
+                    <label name="senha" value="senha"> <br><br>Senha: </label>
                     <input type="text">
-                    <p> Se Voc&ecir; ainda n&atilde;o tem cadastro clique <a src="html/Cadastro.html"> aqui!</a> </p>
+                    <p> Se voc&ecirc; ainda n&atilde;o tem cadastro clique <a target="_blank" href="html/Cadastro.html"> aqui!</a> </p>
                 </fieldset>
                 <fieldset>
-                    <legend>Lista de compras</legend>
+                    <legend><b>Lista de compras</b></legend><br>
                     <label name="produtos" value="produtos"> Produtos: </label>
                     <select type="text">
-                        <option> </option>
+                        <option> Split </option>
+                        <option> Parede </option>
                     </select>
-                    <button type="button" onclick="Incluir">Incluir</button>
-                    <textarea></textarea>
+                    <button type="button" onclick="Incluir">Incluir</button><br><br>
+                    <label name="detalhes" value="detalhes"> Detalhes do produto: </label>
+                    <textarea> Escreva os detalhes do produto aqui!</textarea><br><br>
                     <label name="valor" value="value"> Valor: R$ </label>
                     <input type="number">
                 </fieldset>
                 <fieldset>
-                    <legend>Dados do Cart&atilde;o</legend>
+                    <legend><b>Dados do Cart&atilde;o</b></legend>
                     <label name="numero" value="numero"> N&uacute;mero: </label>
-                    <input type="number" size="2"><input type="number" size="2"><input Type="number" size="2"><input
-                        type="number" size="2">
+                    <input type="number" size="20"><input type="number" size="2"><input Type="number" size="2"><input type="number" size="2"><br><br>
                     <label for="validade"> Validade: </label>
                     <input type="number" min="1" max="31">/
-                    <input type="number" min="1922" max="2030">
+                    <input type="number" min="1922" max="2030"><br><br>
                     <label for="number"> Parcelas</label>
-                    <input type="number" min="2" max="12">
+                    <input type="number" min="2" max="12"><br><br>
 
-                    <fieldset>
+                    <fieldset class="colDir">
                         <input type="radio" name="bandeira" value="VISA"> VISA
                         <input type="radio" name="bandeira" value="Master"> Master
                         <input type="radio" name="bandeira" value="Elo"> Elo
